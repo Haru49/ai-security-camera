@@ -26,3 +26,15 @@
 - `main`: 安定版
 - 作業ブランチ: 機能ごとに作成
 - コミットメッセージ: 何を変えたかが分かる短い文にする
+
+## 技術方針
+
+MVPはKotlinネイティブAndroidアプリとして作ります。
+
+- カメラ: CameraX
+- 骨格推定: MediaPipe Pose Landmarker for Android
+- 判定: Kotlin内のルールベース処理
+- 保存: ローカル保存
+- Python: MVP後の分析・実験・サーバー用途
+
+詳細は[docs/architecture.md](docs/architecture.md)を参照。
