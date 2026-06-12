@@ -29,12 +29,13 @@
 
 ## 技術方針
 
-MVPはKotlinネイティブAndroidアプリとして作ります。
+MVPはKotlinネイティブAndroidアプリと、MacBook Air上のPython AIサーバーで作ります。
 
 - カメラ: CameraX
-- 骨格推定: MediaPipe Pose Landmarker for Android
-- 判定: Kotlin内のルールベース処理
-- 保存: ローカル保存
-- Python: MVP後の分析・実験・サーバー用途
+- Android側: 撮影、フレーム送信、通知、ローカル保存
+- AIサーバー: Python + FastAPI
+- 骨格推定: Pythonサーバー側のMediaPipe Pose
+- 判定: 最初はPythonサーバー側のルールベース処理
+- 通信: 同一Wi-Fi内のHTTP通信
 
 詳細は[docs/architecture.md](docs/architecture.md)を参照。
